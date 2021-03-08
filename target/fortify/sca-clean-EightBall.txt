@@ -1,0 +1,1 @@
+"-version" "-b" "EightBall-1.0" "-clean" "-logfile" "/Users/halehnematollahy/Apps/EightBall-Maven/target/fortify/sca-clean.log"

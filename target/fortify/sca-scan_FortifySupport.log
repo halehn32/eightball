@@ -1,0 +1,150 @@
+[2020-11-16 15:50:10.776 INFO  ]
+loggerConfig:
+   level:INFO
+   filename:/Users/halehnematollahy/Apps/EightBall-Maven/target/fortify/sca-scan.log
+   appendLogFile:true
+   installLoggingPrintStreams:true
+
+   logger:com.fortify.logging.log4j2.LoggerFactory marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2020-11-16 15:50:10.903 INFO  ]
+message suppression file not found /Applications/Fortify/Fortify_SCA_and_Apps_20.2.0/Core/config/suppressions.json
+   logger:com.fortify.messaging.MessageSuppressor marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2020-11-16 15:50:10.906 INFO  ]
+0 suppressions loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2020-11-16 15:50:10.906 INFO  ]
+message level adjustment file not found: /Applications/Fortify/Fortify_SCA_and_Apps_20.2.0/Core/config/levels.json
+   logger:com.fortify.logging.log4j2.LevelAdjuster marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2020-11-16 15:50:10.907 INFO  ]
+0 level adjustments loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2020-11-16 15:50:10.962 INFO  ]
+Fortify Static Code Analyzer 20.2.0.0139 (using JRE 1.8.0_181)
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=INFO_VERBOSE} NDC:[]
+[2020-11-16 15:50:10.963 INFO  ]
+Args:
+["-version", "-b", "EightBall-1.0", "-scan", "-logfile", "/Users/halehnematollahy/Apps/EightBall-Maven/target/fortify/sca-scan.log", "-f", "/Users/halehnematollahy/Apps/EightBall-Maven/target/fortify/EightBall-1.0.fpr", "-build-label", "EightBall-1.0", "-build-project", "EightBall", "-build-version", "1.0"]
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2020-11-16 15:50:10.963 INFO  ]
+VM Args:
+"-XX:SoftRefLRUPolicyMSPerMB=3000 -Xmx15032385536 -Xss16M"
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2020-11-16 15:50:11.380 INFO  ]
+Front End complete
+   logger:com.fortify.sca.frontend.FrontEndSession marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=INIT} NDC:[]
+[2020-11-16 15:50:11.571 INFO  1451]
+Analyzing 2 source file(s)
+   logger:com.fortify.sca.Main marker:USER thread:sourceanalyzer-12
+   MDC:{msgId=1451, severity=INFO_VERBOSE, step=INIT} NDC:[timerSourceanalyzer.Run]
+[2020-11-16 15:50:11.739 INFO  ]
+License Metadata:
+  Created On: 2016-04-25 16:26:50.0
+  License Description: Internal Everything -- 2020-12-31
+  License ID: L0a2c50ee-e167-4647-96d6-caa8ed0eac0d
+  Subscription ID: S9bbd2b29-dc5f-4fdd-9520-e6c61f8d3830
+  owner: Fortify Software
+   logger:com.fortify.sca.util.LicenseUtil marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=INIT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2020-11-16 15:50:11.786 INFO  ]
+Loading nametable with 1 compilation units
+   logger:com.fortify.sca.backend.BackEnd marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerPHASE_ZERO]
+[2020-11-16 15:50:11.880 INFO  ]
+Loaded nametable with 1 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-19
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2020-11-16 15:50:25.256 INFO  ]
+Completing call graph
+   logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=COMPLETE_CALLGRAPH} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2020-11-16 15:50:25.583 INFO  ]
+Constant Propagation: starting initialization of 1 compilation units
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2020-11-16 15:50:25.586 INFO  ]
+Constant Propagation: initialized 1 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:ConstantPropagation.Visits-thread-1-37
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[]
+[2020-11-16 15:50:25.586 INFO  ]
+Constant Propagation: initial constants for 3 functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2020-11-16 15:50:25.590 INFO  ]
+Constant Propagation: propagating constant parameters for 3 functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2020-11-16 15:50:25.596 INFO  ]
+Constant Propagation: propagating unresolved constants for 3 functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2020-11-16 15:50:25.598 INFO  ]
+Constant Propagation: completed
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2020-11-16 15:50:26.484 INFO  1455]
+Configuration analysis complete
+   logger:com.fortify.sca.backend.BackEnd marker:USER thread:sourceanalyzer-12
+   MDC:{msgId=1455, severity=INFO_VERBOSE, step=CONFIG_ANALYSIS} NDC:[timerSourceanalyzer.Run, timerPHASE_ONE_TWO]
+[2020-11-16 15:50:28.139 INFO  ]
+legacy nullpointer analyzer WILL be run
+   logger:com.fortify.sca.analyzer.stateful.nullptr.NullPtrAnalyzer marker:DEV thread:sourceanalyzer-12
+   MDC:{analyzer=NullPointerAnalyzer, msgId=-1, severity=NONE, step=NULLPTR} NDC:[timerSourceanalyzer.Run, timerPHASE_ONE_TWO, timerNullPointerAnalyzer]
+[2020-11-16 15:50:29.262 INFO  1458]
+Rendering 6 results
+   logger:com.fortify.sca.renderer.AbstractRenderer marker:USER thread:sourceanalyzer-12
+   MDC:{msgId=1458, severity=INFO_VERBOSE, step=RENDER_RESULTS} NDC:[timerRender.Run]
+[2020-11-16 15:50:29.951 INFO  1459]
+Analysis completed in 00:17
+   logger:com.fortify.sca.Main marker:USER thread:sourceanalyzer-12
+   MDC:{msgId=1459, severity=INFO_VERBOSE, step=RENDER_RESULTS} NDC:[]
+[2020-11-16 15:50:29.952 INFO  ]
+message id statistics:
+   id:        -1 total:       193 totalSuppressedCount:         0 scope:[]
+   id:      1458 total:         1 totalSuppressedCount:         0 scope:[]
+   id:      1459 total:         1 totalSuppressedCount:         0 scope:[]
+   id:      1451 total:         1 totalSuppressedCount:         0 scope:[]
+   id:      1455 total:         1 totalSuppressedCount:         0 scope:[]
+
+   logger:com.fortify.messaging.MessageSuppressor marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE, step=RENDER_RESULTS} NDC:[]
+[2020-11-16 15:50:29.952 INFO  ]
+logger:null  count:25
+   level:INFO count:25
+logger:com.fortify.messaging.MessageSuppressor  count:2
+   level:INFO count:2
+logger:com.fortify.sca.backend.BackEnd  count:2
+   level:INFO count:2
+logger:com.fortify.sca.analyzer.stateful.nullptr.NullPtrAnalyzer  count:1
+   level:INFO count:1
+logger:com.fortify.sca.analyzer.constants.ConstantPropagator  count:5
+   level:INFO count:5
+logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder  count:1
+   level:INFO count:1
+logger:com.fortify.sca.cmd.CommandLine  count:2
+   level:INFO count:2
+logger:com.fortify.logging.log4j2.LoggerFactory  count:1
+   level:INFO count:1
+logger:com.fortify.sca.util.Parallelizer  count:2
+   level:INFO count:2
+logger:com.fortify.sca.frontend.FrontEndSession  count:1
+   level:INFO count:1
+logger:com.fortify.logging.log4j2.LevelAdjuster  count:1
+   level:INFO count:1
+logger:com.fortify.sca.renderer.AbstractRenderer  count:1
+   level:INFO count:1
+logger:com.fortify.sca.Main  count:5
+   level:INFO count:5
+logger:com.fortify.sca.util.LicenseUtil  count:1
+   level:INFO count:1
+
+   logger:com.fortify.logging.LoggerStats marker:DEV thread:sourceanalyzer-12
+   MDC:{msgId=-1, severity=NONE, step=RENDER_RESULTS} NDC:[]

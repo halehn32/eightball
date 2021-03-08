@@ -1,0 +1,1 @@
+"-version" "-b" "EightBall-1.0" "-logfile" "/Users/halehnematollahy/Apps/EightBall-Maven/target/fortify/sca-translate.log" "-java-build-dir" "/Users/halehnematollahy/Apps/EightBall-Maven/target/classes" "-source" "1.8" "/Users/halehnematollahy/Apps/EightBall-Maven/src/main/java"
