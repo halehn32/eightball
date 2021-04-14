@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: FortifyDemo
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+  
+resources:
+  webhooks:
+    - webhook: SSC_Complete           ### Webhook alias
+      connection: SSC_Webhook    ### Incoming webhook service connection
+#      filters:                                 ### List of JSON parameters to filter; Parameters are AND'ed
+#        - path: JSONParameterPath              ### JSON path in the payload
+#          value: JSONParameterExpectedValue    ### Expected value in the path provided
+
