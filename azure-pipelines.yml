@@ -20,8 +20,8 @@ steps:
   
 resources:
   webhooks:
-    - webhook: SSC_Complete           ### Webhook alias
-      connection: SSC_Webhook    ### Incoming webhook service connection
+    - webhook: SSC_Demo           ### Webhook alias
+      connection: SSC_Test    ### Incoming webhook service connection
 #      filters:                                 ### List of JSON parameters to filter; Parameters are AND'ed
 #        - path: JSONParameterPath              ### JSON path in the payload
 #          value: JSONParameterExpectedValue    ### Expected value in the path provided
