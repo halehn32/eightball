@@ -24,4 +24,4 @@ steps:
   inputs:
     ScanSettings: 'c:\scansettings.xml'
     APIRoot: 'http://fortifydemo:8083/webinspect/swagger/ui/index'
-    ScanResultsLocation: 'c:\scanresults'
+    
