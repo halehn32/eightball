@@ -26,3 +26,8 @@ resources:
 #        - path: JSONParameterPath              ### JSON path in the payload
 #          value: JSONParameterExpectedValue    ### Expected value in the path provided
 
+- task: FortifyDynamicAssessment@7
+  inputs:
+    ScanSettings: 'c:\scansettings.xml'
+    APIRoot: '[fortify priority order]:critical AND category:sql injection'
+    ScanResultsLocation: 'c:\scanresults'
