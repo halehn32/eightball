@@ -29,3 +29,4 @@ steps:
     TenantID: 'DGR'
     EntitlementPreference: '1'
     PurchaseEntitlements: true
+    PreferRemediation: true
