@@ -28,3 +28,4 @@ steps:
     PersonalAccessTokenSecret: 'WW9XbmhsMFx6T2JJMzFTTWxySjJiTmBVR0pMPkow0'
     TenantID: 'DGR'
     EntitlementPreference: '1'
+    PurchaseEntitlements: true
