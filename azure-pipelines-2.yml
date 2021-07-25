@@ -1,0 +1,24 @@
+# Starter pipeline
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: FortifyDemo
+  name: Default
+
+steps:
+
+- task: FedRampFortifyOnDemandStatic@7
+  inputs:
+    FortifyProjects: 'C:\Apps\eightball'
+    BSIToken: 'eyJ0ZW5hbnRJZCI6MSwidGVuYW50Q29kZSI6IkRHUiIsInJlbGVhc2VJZCI6MTM1OTgsInBheWxvYWRUeXBlIjoiQU5BTFlTSVNfUEFZTE9BRCIsImFzc2Vzc21lbnRUeXBlSWQiOjI3LCJ0ZWNobm9sb2d5VHlwZSI6IkpBVkEvSjJFRSIsInRlY2hub2xvZ3lUeXBlSWQiOjcsInRlY2hub2xvZ3lWZXJzaW9uIjoiMS44IiwidGVjaG5vbG9neVZlcnNpb25JZCI6MTIsImF1ZGl0UHJlZmVyZW5jZSI6IkF1dG9tYXRlZCIsImF1ZGl0UHJlZmVyZW5jZUlkIjoyLCJpbmNsdWRlVGhpcmRQYXJ0eSI6ZmFsc2UsImluY2x1ZGVPcGVuU291cmNlQW5hbHlzaXMiOmZhbHNlLCJwb3J0YWxVcmkiOiJodHRwczovL2ZlZC5mb3J0aWZ5Z292LmNvbS8iLCJhcGlVcmkiOiJodHRwczovL2FwaS5mZWQuZm9ydGlmeWdvdi5jb20iLCJzY2FuUHJlZmVyZW5jZSI6IlN0YW5kYXJkIiwic2NhblByZWZlcmVuY2VJZCI6MX0='
+    APIAuthenticationType: '2'
+    Username: 'halehn'
+    PersonalAccessTokenSecret: 'ihbsbuh3ymvqylzq4zexwmdg3fmi2qj75vyb243d2to2rqd3uciq'
+    TenantID: '9257'
+    EntitlementPreference: '1'
