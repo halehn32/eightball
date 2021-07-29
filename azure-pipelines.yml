@@ -25,5 +25,4 @@ steps:
     EntitlementPreference: '1'
     PurchaseEntitlements: true
     PreferRemediation: true
-    PurchaseEntitlements: true
-    PreferRemediation: true
+    
