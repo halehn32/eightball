@@ -13,14 +13,17 @@ pool:
 steps:
 
   
+
 - task: FedRampFortifyOnDemandStatic@7
   inputs:
     FortifyProjects: 'c:\agent\eightball'
     BSIToken: 'eyJ0ZW5hbnRJZCI6MSwidGVuYW50Q29kZSI6IkRHUiIsInJlbGVhc2VJZCI6MTI1NywicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6MjcsInRlY2hub2xvZ3lUeXBlIjoiSkFWQS9KMkVFIiwidGVjaG5vbG9neVR5cGVJZCI6NywidGVjaG5vbG9neVZlcnNpb24iOiIxLjgiLCJ0ZWNobm9sb2d5VmVyc2lvbklkIjoxMiwiYXVkaXRQcmVmZXJlbmNlIjoiQXV0b21hdGVkIiwiYXVkaXRQcmVmZXJlbmNlSWQiOjIsImluY2x1ZGVUaGlyZFBhcnR5IjpmYWxzZSwiaW5jbHVkZU9wZW5Tb3VyY2VBbmFseXNpcyI6ZmFsc2UsInBvcnRhbFVyaSI6Imh0dHBzOi8vZmVkLmZvcnRpZnlnb3YuY29tLyIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLmZlZC5mb3J0aWZ5Z292LmNvbSIsInNjYW5QcmVmZXJlbmNlIjoiU3RhbmRhcmQiLCJzY2FuUHJlZmVyZW5jZUlkIjoxfQ=='
     APIAuthenticationType: '2'
     Username: 'haleh_fed'
-    PersonalAccessTokenSecret: 'WW9XbmhsMFx6T2JJMzFTTWxySjJiTmBVR0pMPkow0'
+    PersonalAccessTokenSecret: 'REhDZjVkbzZETGc7eVhzZnVUKFYzaHNGKzVxbDFI0'
     TenantID: 'DGR'
     EntitlementPreference: '1'
+    PurchaseEntitlements: true
+    PreferRemediation: true
     PurchaseEntitlements: true
     PreferRemediation: true
