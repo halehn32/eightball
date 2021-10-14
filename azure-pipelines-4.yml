@@ -12,29 +12,25 @@ pool:
 
 steps:
 
-
-- script: |
-    - task: FortifyOnDemandStatic@8
-      inputs:
-        FortifyProjects: 'C:\agent\_work\5\a'
-        FodConnection: 'FOD Demo'
-        ReleaseOptions: '0'
-        ReleaseId: 2.0.1
-        EntitlementSelection: '1'
-        EntitlementPreference: '2'
-        OverrideScanSettings: '2'
-        InProgressScanActionType: '2'
-        RemediationScanPreference: '0'
-        BuildType: 'none'
-        PolicyFailAction: '1'
-
-- task: FortifyOnDemandDynamic@7
+- task: FortifyOnDemandStatic@8
   inputs:
-    APIUrl: 'https://api.ams.fortify.com'
-    ReleaseId: '2.0.1'
-    APIAuthenticationType: '2'
-    Username: 'hnematollahy1'
-    PersonalAccessTokenSecret: 'RUZcbDlKU2swMFZ7UldYWlFzc0NGUjRrWzhBeWlv0'
-    TenantID: 'franklinbank'
-    EntitlementPreference: '1'
-    APIKey: 
+    FortifyProjects: 'C:\agent\_work\5\a'
+    FodConnection: 'FOD Demo'
+    ReleaseOptions: '0'
+    ReleaseId: 274581
+    EntitlementSelection: '1'
+    EntitlementPreference: '2'
+    OverrideScanSettings: '2'
+    InProgressScanActionType: '2'
+    RemediationScanPreference: '0'
+    BuildType: 'none'
+    
+- task: FortifyOnDemandDynamic@7
+     inputs:
+       APIUrl: 'https://api.ams.fortify.com'
+       ReleaseId: '274581'
+       APIAuthenticationType: '2'
+       Username: 'hnematollahy1'
+       PersonalAccessTokenSecret: 'RUZcbDlKU2swMFZ7UldYWlFzc0NGUjRrWzhBeWlv0'
+       TenantID: 'franklinbank'
+       EntitlementPreference: '1'
