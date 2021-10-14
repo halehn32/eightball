@@ -12,6 +12,7 @@ pool:
 
 steps:
 
+
 - task: FortifyOnDemandStatic@8
   inputs:
     FortifyProjects: 'C:\agent\_work\5\a'
@@ -24,6 +25,7 @@ steps:
     InProgressScanActionType: '2'
     RemediationScanPreference: '0'
     BuildType: 'none'
+    PolicyFailAction: '1'
     
 - task: FortifyOnDemandDynamic@7
      inputs:
