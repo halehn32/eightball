@@ -17,12 +17,16 @@ steps:
 - task: FedRampFortifyOnDemandStatic@7
   inputs:
     FortifyProjects: 'c:\agent\eightball'
-    BSIToken: 'eyJ0ZW5hbnRJZCI6MSwidGVuYW50Q29kZSI6IkRHUiIsInJlbGVhc2VJZCI6MTI1NywicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6MjcsInRlY2hub2xvZ3lUeXBlIjoiSkFWQS9KMkVFIiwidGVjaG5vbG9neVR5cGVJZCI6NywidGVjaG5vbG9neVZlcnNpb24iOiIxLjgiLCJ0ZWNobm9sb2d5VmVyc2lvbklkIjoxMiwiYXVkaXRQcmVmZXJlbmNlIjoiQXV0b21hdGVkIiwiYXVkaXRQcmVmZXJlbmNlSWQiOjIsImluY2x1ZGVUaGlyZFBhcnR5IjpmYWxzZSwiaW5jbHVkZU9wZW5Tb3VyY2VBbmFseXNpcyI6ZmFsc2UsInBvcnRhbFVyaSI6Imh0dHBzOi8vZmVkLmZvcnRpZnlnb3YuY29tLyIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLmZlZC5mb3J0aWZ5Z292LmNvbSIsInNjYW5QcmVmZXJlbmNlIjoiU3RhbmRhcmQiLCJzY2FuUHJlZmVyZW5jZUlkIjoxfQ=='
+- task: FedRampFortifyOnDemandStatic@7
+  inputs:
+    FortifyProjects: 'https://github.com/halehn32/eightball.git'
+    BSIToken: 'eyJ0ZW5hbnRJZCI6NjgsInRlbmFudENvZGUiOiJGcmFua2xpbkJhbmsiLCJyZWxlYXNlSWQiOjczODAyMSwicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6Mjc0LCJ0ZWNobm9sb2d5VHlwZSI6IkpBVkEvSjJFRS9Lb3RsaW4iLCJ0ZWNobm9sb2d5VHlwZUlkIjo3LCJ0ZWNobm9sb2d5VmVyc2lvbiI6IjEuOCIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjEyLCJhdWRpdFByZWZlcmVuY2UiOiJBdXRvbWF0ZWQiLCJhdWRpdFByZWZlcmVuY2VJZCI6MiwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjpmYWxzZSwicG9ydGFsVXJpIjoiaHR0cHM6Ly9hbXMuZm9ydGlmeS5jb20iLCJhcGlVcmkiOiJodHRwczovL2FwaS5hbXMuZm9ydGlmeS5jb20iLCJzY2FuUHJlZmVyZW5jZSI6IlN0YW5kYXJkIiwic2NhblByZWZlcmVuY2VJZCI6MX0='
     APIAuthenticationType: '2'
-    Username: 'haleh_fed'
-    PersonalAccessTokenSecret: 'REhDZjVkbzZETGc7eVhzZnVUKFYzaHNGKzVxbDFI0'
-    TenantID: 'DGR'
-    EntitlementPreference: '1'
+    Username: 'hnematollahy1'
+    PersonalAccessTokenSecret: 'MGllOTI9aG10TVk5TlJJPVJaME5sSVl9alNZcGFR0'
+    TenantID: 'franklinbank'
+    EntitlementPreference: '2'
     PurchaseEntitlements: true
     PreferRemediation: true
+    
     
