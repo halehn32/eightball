@@ -14,9 +14,7 @@ steps:
 
   
 
-- task: FedRampFortifyOnDemandStatic@7
-  inputs:
-    FortifyProjects: 'c:\agent\eightball'
+   
 - task: FedRampFortifyOnDemandStatic@7
   inputs:
     FortifyProjects: 'https://github.com/halehn32/eightball.git'
