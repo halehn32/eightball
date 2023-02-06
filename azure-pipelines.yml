@@ -24,7 +24,7 @@ steps:
     PersonalAccessTokenSecret: 'dEEnY2U3U0h1MWljYjM0OFhocGZCQihad217R1pZ0'
     TenantID: 'dgr'
     EntitlementPreference: '2'
-    PurchaseEntitlements: true
-    PreferRemediation: true
+    PurchaseEntitlements: false
+    PreferRemediation: false
     
     
