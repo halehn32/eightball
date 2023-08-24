@@ -13,4 +13,7 @@ jobs:
     runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
     steps:
     - run: /Applications/Fortify/Fortify_SCA_23.1.0/bin/sourceanalyzer -help
+    - run: /Applications/Fortify/Fortify_SCA_23.1.0/bin/sourceanalyzer -b 8ball EightBall.java
+    - run: /Applications/Fortify/Fortify_SCA_23.1.0/bin/sourceanalyzer -b 8ball -scan -f 8ball.fpr
+    - run: /Applications/Fortify_Apps_and_Tools_23.1.0/bin/fortifyclient -url http://192.168.1.162:8380/ssc -authtoken 4f306047-a095-446c-a9b3-1a65d54a11e5 uploadFRP -8ball.fpr -applicationVersionID 21
 
