@@ -1,10 +1,16 @@
-name:  SAST Scan
-
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      chosen-os:
+        required: true
+        type: choice
+        options:
+        - Ubuntu
+        - macOS
 
 jobs:
-
   test:
-    runs-on: self-hosted
+    runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
     steps:
     - run: echo Hello world!
+
